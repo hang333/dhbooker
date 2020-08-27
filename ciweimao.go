@@ -134,7 +134,8 @@ func watchChan(num int) {
 
 //获取章节内容
 func getChapterContent(chapterID string) (string, int) {
-	contentKeyURL := "https://app.hbooker.com/chapter/get_chapter_cmd?app_version=" + appVersion + "&chapter_id=" + chapterID + "&login_token=" + token.loginToken + "&account=" + token.account
+	//contentKeyURL := "https://app.hbooker.com/chapter/get_chapter_cmd?app_version=" + appVersion + "&chapter_id=" + chapterID + "&login_token=" + token.loginToken + "&account=" + token.account
+	contentKeyURL := "https://app.hbooker.com/chapter/get_chapter_command?app_version=" + appVersion + "&chapter_id=" + chapterID + "&login_token=" + token.loginToken + "&account=" + token.account
 	paramsMap := map[string]string{"app_version": appVersion, "chapter_id": chapterID, "login_token": token.loginToken, "account": token.account}
 	keyRes, err := httpGet(contentKeyURL, paramsMap)
 	if err != nil {

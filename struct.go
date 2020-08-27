@@ -9,7 +9,7 @@ import (
 	"gopkg.in/cheggaaa/pb.v1"
 )
 
-const appVersion = "2.1.032"
+const appVersion = "2.6.011"
 const initEncryptKey = "zG2nSeEfSHfvTCHy5LCcqtBbQehKNLXn"
 
 var ostype = runtime.GOOS
